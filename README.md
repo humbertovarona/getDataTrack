@@ -26,13 +26,17 @@ Extract data from a NetCDF file via a trajectory
 
 ```shell
 pip install numpy
-pip install matplotlib
+pip install netCDF4
+pip install gsw
+pip install griddata
 ```
 
 ## Installation
 
 ```python
 import numpy as np
-import matplotlib.pyplot as plt
+from netCDF4 import Dataset
+import gsw
+from scipy.interpolate import griddata
 ```
 
